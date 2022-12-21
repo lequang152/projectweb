@@ -1,6 +1,10 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
 .login-background {
-    height: 100vh;
-    background: linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(212, 114, 183) 0%, rgba(253,187,45,1) 100%);
 }
 
 .login-container {
@@ -32,11 +36,16 @@
     margin: 8px 0;
 }
 
+label {
+    display: block;
+    margin-bottom: 2px;
+}
+
 input.form-control {
     display: block;
     width: 95%;
     margin: auto;
-    height: 24px;
+    height: 26px;
 }
 
 .password {
@@ -61,7 +70,7 @@ input.form-control {
     outline: none;
     border: none;
     cursor: pointer;
-    background: linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(135deg, rgb(84, 171, 173) 0%, rgb(163, 137, 212) 100%);
 }
 
 .forgot-pass {
@@ -100,7 +109,7 @@ div.col-12.text-social {
 button.btn-register {  
     width: 120px;
     height: 30px;
-    background: linear-gradient(120deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+     background: linear-gradient(135deg, rgb(84, 171, 173) 0%, rgb(163, 137, 212) 100%);
     border-radius: 10px;
     border: none;
     color: white;

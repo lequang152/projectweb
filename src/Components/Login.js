@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import '../Auth/Login.css'
-import { FaFacebookSquare, FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa'
+import './Login.css';
+import { FaFacebookSquare, FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa';
+import './Navigation'
+import Navigation from './Navigation';
 
 class Login extends Component {
     constructor(props) {
@@ -9,6 +11,8 @@ class Login extends Component {
             username: '', 
             password: '',
             isShowPassword: false,
+            errorMsg: '',
+            success: false
         }
     }
 
@@ -26,8 +30,11 @@ class Login extends Component {
         
     }
 
-    handleLogin = async () => {
-        alert('Login Success')
+    handleLogin = async (event) => {
+        console.log(this.state.username, this.state.password);
+        this.setState({
+            success: true
+        })
     }
 
     handleShowPassword = () => {
@@ -41,9 +48,12 @@ class Login extends Component {
     }
 
     render() {
-
         return (
-            <div className='login-background'>
+            <>
+            {this.state.success ? (
+                <Navigation/>
+            ) : (
+                <div className='login-background'>
                 <div className='login-container'>
                     <div className='login-content row'>
                         <div className='col-12 text-login'>Login</div>
@@ -101,7 +111,9 @@ class Login extends Component {
 
                     </div>
                 </div>
-            </div>    
+            </div>   
+            )}
+            </>
         )
     }
 }

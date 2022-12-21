@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import Login from './Auth/Login';
+import Login from './Components/Login';
+import {Router, Route} from 'react-router-dom';
 
 function App() {
   return (
