@@ -1,0 +1,109 @@
+.login-background {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.login-container {
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    margin: auto;        
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: azure;
+}
+
+.login-content {
+    padding: 10px;
+}
+
+.text-login {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 10px;
+}
+    
+
+.login-input {
+    margin: 8px 0;
+}
+
+input.form-control {
+    display: block;
+    width: 95%;
+    margin: auto;
+    height: 24px;
+}
+
+.password {
+    position: relative;
+}
+
+.eyes {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+        
+            
+.btn-login {
+    width: 100%;
+    margin: 10px 0;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.forgot-pass {
+    font-size: 11px;
+}
+
+div.col-12.text-social {
+    font-size: 14px;
+    text-align: center;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.facebook {
+    font-size: 30px;
+    color: #307aff;
+    margin-right: 10px;
+}
+                
+.google {
+    font-size: 28px;
+    color: red;
+    border-radius: 50%;
+}
+    
+
+.col-12.button-reg {
+    text-align: center;
+    padding-top: 30px;
+}
+
+button.btn-register {  
+    width: 120px;
+    height: 30px;
+    background: linear-gradient(120deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
