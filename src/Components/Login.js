@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Login.css';
 import { FaFacebookSquare, FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa';
-import './Navigation'
 import Navigation from './Navigation';
+import Bigcorp from './Bigcorp';
 
 class Login extends Component {
     constructor(props) {
@@ -51,7 +51,7 @@ class Login extends Component {
         return (
             <>
             {this.state.success ? (
-                <Navigation/>
+                <Bigcorp/>
             ) : (
                 <div className='login-background'>
                 <div className='login-container'>
