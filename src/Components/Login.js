@@ -3,6 +3,7 @@ import './Login.css';
 import { FaFacebookSquare, FaGoogle, FaEye, FaEyeSlash } from 'react-icons/fa';
 import Navigation from './Navigation';
 import Bigcorp from './Bigcorp';
+import Products from './Products';
 
 class Login extends Component {
     constructor(props) {
